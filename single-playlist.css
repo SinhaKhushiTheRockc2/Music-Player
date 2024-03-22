@@ -1,0 +1,844 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Nunito Sans";
+    background-color: rgb(22, 21, 21);
+    color: white;
+}
+
+/* Navigation */
+#body-header{
+    position: sticky;
+    top: 0%;
+    left: 2%;
+    z-index: 10000;
+    background-color: rgb(24, 22, 22);
+}
+
+#navbar{
+    display: flex;
+}
+
+#logo{
+    display: flex;
+}
+
+#logo img{
+    height: 4rem;
+    border-radius: 50%;
+    margin-left: 1.2rem;
+    margin-top: 1.2rem;
+    margin-right: 7%;
+    cursor: pointer;
+}
+
+#logo span{
+    margin-top:1.4rem;
+}
+
+#logo img:hover{
+    transition: 0.5s ease-in-out;
+    transform: rotate(180deg);
+}
+
+
+.horizontal-list{
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-list li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.horizontal-list li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 60%;
+    padding: 55%;
+}
+
+
+.user{
+    position: absolute;
+    right: 2%;
+    top: 20%;
+}
+
+.user img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.search-container{
+    width: 40%;
+}
+.search-bar{
+    position:absolute;
+    right:11%;
+    top:2rem;
+    background-color: rgb(38, 36, 36);
+    border-radius: 8px;
+}
+
+#search{
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding:5px;
+    caret-color: white;
+}
+
+.search-bar span{
+    padding: 10px;
+}
+
+.notification-bell{
+    position: absolute;
+    top:2.2rem;
+    right: 8%;
+}
+
+.notification-bell i{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.notification-bell i:hover{
+    transition: .5s ease-in-out;
+    transform: rotate(360deg);
+}
+
+.dot{
+    height: 6px;
+    width: 6px;
+    background-color: red;
+    border-radius: 50%;
+    position:absolute;
+    top:2.2rem;
+    right: 8%;
+}
+
+/* Artist Information Section */
+.artist-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-top: 6rem;
+    background-image: linear-gradient(purple,rgb(247, 12, 51));
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.artist-image img{
+    height: 400px;
+    margin-bottom: 0;
+}
+
+.artist-details{
+    position: relative;
+}
+
+.artist-details h3{
+    color: rgb(23, 22, 22);
+    position: absolute;
+    top:20%;
+}
+
+.artist-details h4{
+    position: absolute;
+    right: 2%;
+    top:10%;
+    color: rgb(30, 29, 29);
+}
+
+.artist-details p{
+    color: rgb(19, 18, 18);
+}
+
+.artist-details button{
+    margin-top:20px;
+    margin-bottom: 2%;
+    padding: 2%;
+    font-size: 1.2rem;
+    background: none;
+    color: white;
+    cursor: pointer;
+    width: 30%;
+    border-color: white;
+}
+
+.play{
+    position: relative;
+}
+
+.play span{
+    position: absolute;
+    top:100%;
+    left: 0;
+    font-size: 0.8rem;
+}
+
+.artist-details button:hover{
+    background: repeating-linear-gradient(rgb(8, 8, 114),rgb(126, 8, 126));
+}
+
+
+/* Main */
+.main-parent{
+    margin-top: 5%;
+    margin-left: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 30%;
+}
+
+.main-parent img{
+    width: 80px;
+    height: 80px;
+}
+
+.child{
+    position: relative;
+    margin-bottom: 5%;
+    background-image: linear-gradient(rgb(241, 10, 49),rgb(75, 2, 75));
+}
+
+.numeric{
+    position: absolute;
+    left: -4%;
+    top: 30%;
+}
+
+.child:hover .bar-graph-class{
+    display: block;
+    z-index: 1;
+    color: rgb(0, 125, 125);
+    font-size: 1rem;
+}
+
+.child:hover .numeric{
+    display: none;
+}
+.head-primary{
+    font-size: 0.8rem;
+    position: absolute;
+    top:40%;
+    left: 12%;
+}
+
+.head-secondary{
+    font-size: 0.6rem;
+    position: absolute;
+    top:60%;
+    left: 12%;
+    color: grey;
+}
+
+.heart-class{
+    position:absolute;
+    right: 12%;
+    top:30%;
+    font-size: 1.5rem;
+}
+
+.add-class{
+    position: absolute;
+    right: 4%;
+    top:30%;
+    font-size: 1.5rem;
+}
+
+.heart-class:hover{
+    color: rgb(13, 12, 12);
+}
+
+.add-class:hover{
+    color: rgb(20, 19, 19);
+}
+
+
+.bar-graph-class{
+    position:absolute;
+    left:-4%;
+    top:30%;
+    display: none;
+}
+
+/* Aside Section */
+.first-aside-sec{
+    width: 20rem;
+    position: absolute;
+    top:20%;
+    right:4%;
+    background-image: linear-gradient(rgb(236, 136, 108),rgb(255, 0, 43));
+}
+
+.first-aside-sec h1{
+    display: inline;
+    margin-bottom: 15%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-image: linear-gradient(rgb(236, 136, 108),rgb(255, 0, 43));
+}
+.aside-sec{
+    width: 20rem;
+    height: 30%;
+    overflow: scroll;
+    position:absolute;
+    bottom: 0;
+    right: 4%;
+    background-image: linear-gradient(rgb(236, 136, 108),rgb(255, 0, 43));
+}
+
+.aside-sec h1{
+    display: inline;
+    margin-bottom: 15%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-image: linear-gradient(rgb(236, 136, 108),rgb(255, 0, 43));
+}
+
+.aside-sec::-webkit-scrollbar{
+    display: none;
+}
+
+.list-container{
+    width: 16rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.queue-list{
+    list-style-type: upper-roman;
+    position: relative;
+    padding-left: 15%;
+}
+
+.queue-list img{
+    height: 40px;
+    width: 40px;
+    margin-left: 4%;
+}
+.bar-graph{
+    display: none;
+}
+
+.list-container:hover .bar-graph{
+    display: block;
+    position: absolute;
+    left: -6%;
+    bottom:5%;
+    z-index: 1;
+    color: rgb(11, 187, 187);
+}
+
+.heart{
+    position: absolute;
+    right: 4%;
+    font-size: 1.2rem;
+}
+
+.heart:hover{
+    color: red;
+}
+.queue-list h3{
+    font-size: 0.8rem;
+    text-align: center;
+    display: inline;
+    position: absolute;
+    top:0%;
+    margin-left: 4%;
+}
+
+.queue-list h4{
+    font-size: 0.6rem;
+    text-align: center;
+    display: inline;
+    position: absolute;
+    top:40%;
+    color: black;
+    margin-left: 4%;
+}
+
+.list-container:hover{
+    list-style-type: none;
+}
+
+.queue-dropdown-caller{
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+    display: inline;
+    font-size: 1rem;
+    color: rgb(0, 120, 120);
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: rgb(24, 22, 22);;
+    background-image: linear-gradient(rgb(236, 136, 108),rgb(255, 0, 43));
+}
+
+.aside-sec .queue-menu{
+    position: sticky;
+    top: 0%;
+    background-color: rgb(24, 22, 22);
+}
+
+.queue-menu{
+    z-index: 100;
+}
+
+.queue-menu:hover .queue-dropdown-list{
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+.queue-dropdown-list{
+    background-color: white;
+    width:12rem;
+    display: none;
+}
+
+.bar-list{
+    list-style: none;
+    color:black;
+}
+
+.bar-list li{
+    border-bottom:2px solid black;
+    padding:4%;
+    margin:12px;
+}
+
+.parent-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.parent-container img{
+    width:100px;
+    height: 100px;
+}
+
+.child-1{
+    position: relative;
+}
+
+.child-2{
+    position: relative;
+}
+
+.child-3{
+    position: relative;
+}
+
+.h-primary-s{
+    font-size: 0.8rem;
+    position: absolute;
+    top:40%;
+    left: 35%;
+}
+
+.h-secondary{
+    font-size: 0.6rem;
+    position: absolute;
+    top:55%;
+    left: 35%;
+    color: grey;
+}
+
+.dropdown-caller{
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    z-index: 1;
+}
+
+.dropdown-list li{
+    list-style: none;
+}
+
+.number{
+    position: absolute;
+    right: 2%;
+    top:50%;
+    font-size: 0.6rem;
+    color: gray;
+}
+
+.dropdown-list{
+    background-color: white;
+    color: grey;
+    width: 40%;
+    display: none;
+}
+
+.dropdown-menu li i{
+    margin-left: 2%;
+    margin-right: 3%;
+}
+.dropdown-list li{
+    border-bottom:2px solid grey;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+
+/* Responsive Aside section */
+
+.responsive-aside-sec{
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+
+.right-angles{
+    background-image: linear-gradient(purple,orange);
+    font-size: 1.4rem;
+    width: fit-content;
+}
+
+.left-angles{
+    background-image: linear-gradient(purple,orange);
+    font-size: 1.4rem;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.dropdown-aside-list{
+    display: none;
+}
+
+.responsive-aside-sec:hover .left-angles{
+    display: block;
+    z-index:2;
+}
+
+.responsive-aside-sec:hover .dropdown-aside-list{
+    display: block;
+}
+
+.responsive-aside-sec:hover .right-angles{
+    display: none;
+}
+
+.responsive-aside-sec{
+    display: none;
+    background-image: linear-gradient(rgb(3, 116, 116),red);
+}
+
+/* Footer Section */
+
+#body-footer{
+    background-color: rgb(24, 22, 22);
+    position: sticky;
+    bottom: 0px;
+    z-index: 2000;
+}
+
+.audio-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(24, 22, 22);
+}
+
+.audio-image{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 20rem;
+}
+
+.audio-image img{
+    height: 70px;
+    width: 70px;
+}
+
+.audio-image h1{
+    font-size: 1rem;
+    margin-left: 3%;
+}
+
+.audio-image h2{
+    position: absolute;
+    font-size: 0.8rem;
+    color: grey;
+    left:25%;
+    top:65%;
+}
+
+.heart-icon{
+    position: absolute;
+    right: 15%;
+
+}
+
+.ban{
+    position: absolute;
+    right: 2%;
+    color: grey;
+}
+
+.heart-icon:hover{
+    color: red;
+}
+
+.more-audio-options{
+    display: flex;
+    position: relative;
+}
+
+.queue-bars{
+    margin-right: 30%;
+    margin-top: 6%;
+}
+
+.computer{
+    margin-left: 15%;
+    position: absolute;
+    top: 20%;
+}
+
+.volume{
+    margin-top: 6%;
+}
+
+.volume-changer{
+    width: 8rem;
+    height: 3rem;
+    position: relative;
+    margin-right: 7rem;
+}
+
+.line{
+    height: 3px;
+    width: inherit;
+    position: absolute;
+    top:50%;
+    background-color: white;
+}
+
+.gradient-color{
+    height: 3px;
+    width: 3rem;
+    position: absolute;
+    top:40%;
+    background-image: linear-gradient(lime,yellow);
+}
+
+.circle{
+    position:absolute;
+    top: 40%;
+    left: 80%;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+/* Common Class */
+.align-items{
+    margin-left: 10%;
+    margin-right: 30%;
+}
+
+.h-primary{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.right-alignment{
+    margin-right: 2rem;
+}
+
+.left-alignment{
+    margin-left:2rem;
+}
+
+.change-width{
+    width:300px;
+}
+
+/* Responsivity */
+@media  screen and (max-width:1200px) {
+    /* Header Section */
+    #body-header{
+        height: 150px;
+    }
+
+    #logo img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .user img{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .user{
+        left: 3%;
+        top:55%;
+    }
+
+    .search-bar{
+        left: 50%;
+        width: 9rem;
+    }
+
+    #search{
+        font-size: 1rem;
+        width: 4rem;
+    }
+
+    .notification-bell{
+        right: 2%;
+        font-size: 0.5rem;
+    }
+
+    .dot{
+        right: 2%;
+    }
+
+
+    /* Home Section */
+    .artist-card{
+        width: 10rem;
+    }
+
+    .artist-image{
+        width: fit-content;
+        margin: auto;
+    }
+
+    .artist-image img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .artist-card{
+        display: block;
+        width: 20rem;
+        margin-left: 12%;
+        margin: auto;
+    }
+
+    .h-primary{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .artist-details h3{
+        display: none;
+    }
+
+    .artist-details h4{
+        display: none;
+    }
+
+    .artist-details p{
+        font-size: 16px;
+        display: block;
+    }
+
+    .artist-details button{
+    margin-top:10px;
+    margin-bottom: 2%;
+    padding: 2%;
+    font-size: 16px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    width: 20%;
+    }
+
+    .play span{
+        display: none;
+    }
+
+    /* Main Section */
+    .main-parent img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .numeric{
+        font-size: 12px;
+    }
+
+    .heart-class{
+        font-size: 16px;
+    }
+
+    .add-class{
+        font-size: 16px;
+    }
+
+    .head-primary{
+        font-size: 0.9rem;
+        top:10%;
+    }
+
+    .head-secondary{
+        font-size: 0.7rem;
+        top:50%;
+    }
+
+    .child{
+        width: auto;
+    }
+
+    .main-parent{
+        margin-top: 5%;
+        margin-left: 7%;
+        margin-right: 3%;
+    }
+    .horizontal-list li{
+        font-size: 1rem;
+    }
+
+    /* Aside Section */
+
+    .first-aside-sec{
+        display: none;
+    }
+
+    .aside-sec{
+        display: none;
+    }
+
+    .responsive-aside-sec{
+        display: block;
+    }
+
+    
+}

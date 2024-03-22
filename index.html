@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Webpage</title>
+    <script src="https://kit.fontawesome.com/17564f7c82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Kalnia:wght@100&family=Noto+Sans+JP:wght@100&family=Nunito+Sans:opsz,wght@6..12,300;6..12,500;6..12,600&family=Pacifico&family=Rethink+Sans&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&family=Silkscreen&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="body-header">
+        <nav id="navbar">
+            <div id="logo">
+                <img src="Assets/cd-icon.png" alt="Logo_img"><span>My<br>Music</span>
+            </div>
+            <div class="dropdown-menu text-right">
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="dropdown-list nav-menu">
+                    <ul class="no-list-style">
+                        <li>
+                            <a href="#"> Home </a>
+                        </li>
+                        <li>
+                            <a href="#popular-artists"> Favourites</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="horizontal-list">
+                <li class="list-item"><a href="#">Home</a></li>
+                <li class="list-item"><a href="#popular-artists">Favourites</a></li>
+            </ul>
+            <div id="right">
+                <div class="search-container">
+                    <div class="search-bar">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" name="search" id="search" placeholder="Search"><span><i
+                                class="fa-solid fa-microphone"></i></span>
+                    </div>
+                </div>
+                <div class="notification-bell">
+                    <a href="#"><i class="fa-solid fa-bell"></i></a>
+                </div>
+                <div class="dot"></div>
+                <div class="user"><a href="#"><img src="Assets/icon.jpg" alt="User-Image"></a></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="Home" class="container-sec">
+        <div class="slider-wrapper align-items">
+            <div class="slider">
+                <img src="Assets/festive_feels.avif" id="slide-1" alt="New_Jeff_release">
+
+                <img src="Assets/new-release.avif" id="slide-2" alt="New_electronic_releas">
+
+                <img src="Assets/live_music.avif" id="slide-3" alt="New_chill_music_release">
+
+                <img src="Assets/jazz.avif" id="slide-4" alt="New_chill_music_release">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest-release">
+        <h1 class="h-primary align-items">Latest Release</h1>
+        <div class="latest-release-container align-items">
+            <div class="row">
+                <div class="latest-rel-item col-6">
+                    <div class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <img src="Assets/david.jpg" alt="woods_img">
+                    <h3>Daylight</h3>
+                    <h4>JAN 1,2024</h4>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-caller"><i class="fa-solid fa-ellipsis"></i></div>
+                        <div class="dropdown-list">
+                            <ul class="bar-list">
+                                <li><i class="fa-solid fa-play"></i>Play Now</li>
+                                <li><i class="fa-solid fa-plus"></i>Add To Queue</li>
+                                <li><i class="fa-solid fa-star"></i>Add To Favorites</li>
+                                <li><i class="fa-solid fa-info"></i>Get Info</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="number">00:29</span>
+                </div>
+                <div class="latest-rel-item col-6">
+                    <div class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <img src="Assets/ariana.webp" alt="woods_img">
+                    <h3>God is a woman</h3>
+                    <h4>JAN 1,2024</h4>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-caller"><i class="fa-solid fa-ellipsis"></i></div>
+                        <div class="dropdown-list">
+                            <ul class="bar-list">
+                                <li><i class="fa-solid fa-play"></i>Play Now</li>
+                                <li><i class="fa-solid fa-plus"></i>Add To Queue</li>
+                                <li><i class="fa-solid fa-star"></i>Add To Favorites</li>
+                                <li><i class="fa-solid fa-info"></i>Get Info</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="number">00:29</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latest-rel-item">
+                    <div class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <img src="Assets/24kgoldn.jpg">
+                    <h3>Mood</h3>
+                    <h4>JAN 1,2024</h4>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-caller"><i class="fa-solid fa-ellipsis"></i></div>
+                        <div class="dropdown-list">
+                            <ul class="bar-list">
+                                <li class="play-now"><i class="fa-solid fa-play"></i>Play Now</li>
+                                <li><i class="fa-solid fa-plus"></i>Add To Queue</li>
+                                <li><i class="fa-solid fa-star"></i>Add To Favorites</li>
+                                <li><i class="fa-solid fa-info"></i>Get Info</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="number">00:29</span>
+                </div>
+                <div class="latest-rel-item">
+                    <div class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <img src="Assets/shilow-dynasty.jpg" alt="woods_img">
+                    <h3>Novocaine</h3>
+                    <h4>JAN 1,2024</h4>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-caller"><i class="fa-solid fa-ellipsis"></i></div>
+                        <div class="dropdown-list">
+                            <ul class="bar-list">
+                                <li><i class="fa-solid fa-play"></i>Play Now</li>
+                                <li><i class="fa-solid fa-plus"></i>Add To Queue</li>
+                                <li><i class="fa-solid fa-star"></i>Add To Favorites</li>
+                                <li><i class="fa-solid fa-info"></i>Get Info</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="number">00:29</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="popular-artists">
+        <h1 class="align-items h-primary">Popular Artists</h1>
+        <div class="artist-container align-items">
+            <a href="brunomarsplaylist.html">
+                <div class="popular-item opacity-reducer">
+                    <div class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="pause-button">
+                        <i class="fa-solid fa-pause">
+                        </i>
+                    </div>
+                    <img src="Assets/brunomars.jpg" alt="Bruno_Mars_img">
+                    <h3>Bruno Mars</h3>
+                </div>
+            </a>
+            <a href="glassanimalsplaylist.html">
+                <div class="popular-item opacity-reducer">
+                    <div class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <img src="Assets/glass-animals.jpg" alt="G;ass_Animals_img">
+                    <h3>Glass Animals</h3>
+                </div>
+            </a>
+            <a href="edsheeranplaylist.html">
+                <div class="popular-item opacity-reducer">
+                    <div class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <img src="Assets/edsheeran.jpg" alt="Ed_Sheeran_img">
+                    <h3>Ed Sheeran</h3>
+                </div>
+            </a>
+            <a href="twicesingleplaylist.html">
+                <div class="popular-item opacity-reducer">
+                    <div class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <img src="Assets/twice.jpg" alt="Twice_img">
+                    <h3>Twice</h3>
+                </div>
+            </a>
+            <a href="jessiplaylist.html">
+                <div class="popular-item opacity-reducer">
+                    <div class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <img src="Assets/jessi.jpg" alt="Jessi_img">
+                    <h3>Jessi</h3>
+                </div>
+            </a>
+            <a href="arcticmonkeys.html">
+                <div class="popular-item opacity-reducer">
+                    <div class="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <img src="Assets/arcticmonkeys.jpg" alt="Bruno_Mars_img">
+                    <h3>Arctic Monkeys</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="mood">
+        <div class="mood-container align-items">
+            <div class="external-div left-alignment">
+                <div class="mood-item left-alignment"><i class="fa-solid fa-compact-disc orange-bg"></i>
+                    <h2 class="orange-bg">Music Stations</h2>
+                </div>
+            </div>
+            <div class="mood-item"><img src="Assets/chill.png" alt="chill_img">
+                <h3>Chill</h3>
+            </div>
+            <div class="mood-item"><img src="Assets/lofi.jpg" alt="lofi-img">
+                <h3>Lofi</h3>
+            </div>
+            <div class="mood-item"><img src="Assets/retro.jpg" alt="retro_img">
+                <h3>Retro</h3>
+            </div>
+            <div class="mood-item"><img src="Assets/rock.jpg" alt="rock_music_img">
+                <h3>Rock</h3>
+            </div>
+            <div class="mood-item"><img src="Assets/pop.jpg" alt="pop_img">
+                <h3>Pop</h3>
+            </div>
+            <div class="mood-item right-alignment"><img src="Assets/workout.jpg" alt="workout_img">
+                <h3>Workout</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="vibes">
+        <div class="vibes-container align-items">
+            <div class="vibes-item"><img src="Assets/road-trip.jpg" alt="road_trip_img"><span>Road-Trip</span></div>
+            <div class="vibes-item"><img src="Assets/electronic.jpg" alt="electronic_music_img"><span>Electronic</span>
+            </div>
+            <div class="vibes-item"><img src="Assets/party.jpg" alt="party_img"><span>Party</span></div>
+        </div>
+    </section>
+
+    <section id="latest-english">
+        <h1 class="align-items h-primary">Latest English</h1>
+        <div class="latest-eng-container align-items">
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/first-cover-image.jpeg" alt="first_cover_img">
+                <h3>Stay with me</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/nth-album-cover.jpg" alt="second_cover_img">
+                <h3>Dum Dum</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/starboy.jpg" alt="third_cover_img">
+                <h3>Starboy</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/lover.jpg" alt="fourth_cover_img">
+                <h3>Lover</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/ariana.webp" alt="fifth_cover_img">
+                <h3>Everyday</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/itzy.jpg" alt="sixth_cover_img">
+                <h3>Wanna be me</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/riri.jpg" alt="sixth_cover_img">
+                <h3>Work</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/drake.jpg" alt="sixth_cover_img">
+                <h3>God's plan</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/harry.jpg" alt="sixth_cover_img">
+                <h3>Watermelon Sugar</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/dua.jpeg" alt="sixth_cover_img">
+                <h3>One kiss</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller"> <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/lady.jpg" alt="sixth_cover_img">
+                <h3>Rain on me</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-eng-item play-button opacity-reducer">
+                <div class="play-caller"> <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/nayeon.jpg" alt="sixth_cover_img">
+                <h3>Pop</h3><span>JAN 1 , 2024</span>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="latest-hindi">
+        <h1 class="align-items h-primary">Latest Hindi</h1>
+        <div class="latest-hindi-container align-items">
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/malang.jpg" alt="third_cover_img">
+                <h3>Malang</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/saat.png" alt="second_cover_img">
+                <h3>Dariya paar</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/ik_kudi.jpg" alt="fifth_cover_img">
+                <h3>Ik kudi</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/kk.jpg" alt="sixth_cover_img">
+                <h3>KK Unpluged</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/dil.jpg" alt="fourth_cover_img">
+                <h3>Lover</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/jaane.jpg" alt="first_cover_img">
+                <h3>Janne Kyuu</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/moveit.jpg" alt="first_cover_img">
+                <h3>Move it like</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/buzz.jpg" alt="first_cover_img">
+                <h3>Buzz</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/prada.jpg" alt="first_cover_img">
+                <h3>Prada</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/wakhra.jpg" alt="first_cover_img">
+                <h3>Wakhra Swag</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/jugnu.jpg" alt="first_cover_img">
+                <h3>Jugnu</h3><span>JAN 1 , 2024</span>
+            </div>
+            <div class="latest-hindi-item play-button opacity-reducer">
+                <div class="play-caller">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="pause-button">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <img src="Assets/moon.jpg" alt="first_cover_img">
+                <h3>Moon Rise</h3><span>JAN 1 , 2024</span>
+            </div>
+        </div>
+    </section>
+
+    <aside class="aside-section">
+        <div class="aside-sec">
+            <div class="queue-menu">
+                <div class="queue-dropdown-caller">Queue<span class="v-class"><i class="fa-solid fa-v"></i></span></div>
+                <div class="queue-dropdown-list">
+                    <ul class="bar-list">
+                        <li>Playlists</li>
+                        <li>Favorite Songs</li>
+                    </ul>
+                </div>
+            </div>
+            <h1>Queue</h1>
+            <ol class="queue-list">
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/jeff.jpg" alt="first_cover_img">
+                        <h3>Stay</h3>
+                        <h4>Jeff Satur</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/first-cover-image.jpeg" alt="first_cover_img">
+                        <h3>Daylight</h3>
+                        <h4>David Kushner</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/second-album-cover.jpeg" alt="first_cover_img">
+                        <h3>Shivers</h3>
+                        <h4>Ed Sheeran</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/third-album-cover.jpg" alt="first_cover_img">
+                        <h3>Cheer Up</h3>
+                        <h4>Twice</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/fourth-album-cover.jpg" alt="first_cover_img">
+                        <h3>Nunu Nana</h3>
+                        <h4>Jessi</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/jeff.jpg" alt="first_cover_img">
+                        <h3>Stay</h3>
+                        <h4>Jeff Satur</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid        fa-chart-simple"></i></span>
+                        <img src="Assets/fifth-album-cover.jpg" alt="first_cover_img">
+                        <h3>Raindrop</h3>
+                        <h4>Arctic Monkeys</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/sixth-album-cover.jpeg" alt="first_cover_img">
+                        <h3>Free Fall</h3>
+                        <h4>Slot Machine</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/first-cover-image.jpeg" alt="first_cover_img">
+                        <h3>Stay with me</h3>
+                        <h4>Jeff Satur</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/second-album-cover.jpeg" alt="first_cover_img">
+                        <h3>Silence</h3>
+                        <h4>David Kushner</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/third-album-cover.jpg" alt="first_cover_img">
+                        <h3>Perfect</h3>
+                        <h4>Ed Sheeran</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/jeff.jpg" alt="first_cover_img">
+                        <h3>Stay</h3>
+                        <h4>Jeff Satur</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/fourth-album-cover.jpg" alt="first_cover_img">
+                        <h3>Shape of you</h3>
+                        <h4>Ed Sheeran</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid        fa-chart-simple"></i></span>
+                        <img src="Assets/fifth-album-cover.jpg" alt="first_cover_img">
+                        <h3>Wanna be yours</h3>
+                        <h4>Arctic Monkeys</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/sixth-album-cover.jpeg" alt="first_cover_img">
+                        <h3>Faded</h3>
+                        <h4>Lauv</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/first-cover-image.jpeg" alt="first_cover_img">
+                        <h3>Dance Monkeys</h3>
+                        <h4>Sia</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/second-album-cover.jpeg" alt="first_cover_img">
+                        <h3>Dandellions</h3>
+                        <h4>Ruth B.</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/third-album-cover.jpg" alt="first_cover_img">
+                        <h3>Daylight</h3>
+                        <h4>David Kushner</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/fourth-album-cover.jpg" alt="first_cover_img">
+                        <h3>Baby</h3>
+                        <h4>Tate</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/jeff.jpg" alt="first_cover_img">
+                        <h3>Stay</h3>
+                        <h4>Jeff Satur</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid        fa-chart-simple"></i></span>
+                        <img src="Assets/fifth-album-cover.jpg" alt="first_cover_img">
+                        <h3>One Kiss</h3>
+                        <h4>Dua Lipa</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+                <div class="list-container">
+                    <li>
+                        <span class="bar-graph">
+                            <i class="fa-solid fa-chart-simple"></i></span>
+                        <img src="Assets/sixth-album-cover.jpeg" alt="first_cover_img">
+                        <h3>Free Fall</h3>
+                        <h4>Slot Machine</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    </li>
+                </div>
+            </ol>
+        </div>
+    </aside>
+
+    <footer id="body-footer">
+        <div class="audio-container">
+            <div class="audio-image">
+                <img src="Assets/david-kushner.jpg" alt="daylight_david_kushner">
+                <h1>Daylight</h1>
+                <h2>David Kushner</h2>
+                <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
+                <span class="ban"><i class="fa-solid fa-ban"></i></span>
+            </div>
+            <div class="main-audio">
+                <audio class="audio-control" src="Music_Files/daylight_david_kushne.mp3" controls></audio>
+            </div>
+            <div class="more-audio-options">
+                <span class="queue-bars"><i class="fa-solid fa-bars"></i></span>
+                <span class="computer"><i class="fa-solid fa-laptop-file"></i></span>
+                <span class="volume"><i class="fa-solid fa-volume-high"></i></span>
+                <div class="volume-changer">
+                    <div class="line">
+                        <div class="gradient-color"></div>
+                    </div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="responsive-aside" class="res-aside">
+        <div class="responsive-aside-sec text-right">
+            <div class="left-angles">
+                <i class="fa-solid fa-angles-left"></i>
+            </div>
+            <div class="right-angles"><i class="fa-solid fa-angles-right"></i></div>
+            <div class="dropdown-aside-list background-linear">
+                <ol class="queue-list">
+                    <div class="list-container">
+                        <li>
+                            <span class="bar-graph">
+                                <i class="fa-solid fa-chart-simple"></i></span>
+                            <img src="Assets/jeff.jpg" alt="first_cover_img">
+                            <h3>Stay</h3>
+                            <h4>Jeff Satur</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                        </li>
+                    </div>
+                    <div class="list-container">
+                        <li>
+                            <span class="bar-graph">
+                                <i class="fa-solid fa-chart-simple"></i></span>
+                            <img src="Assets/first-cover-image.jpeg" alt="first_cover_img">
+                            <h3>Daylight</h3>
+                            <h4>David Kushner</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                        </li>
+                    </div>
+                    <div class="list-container">
+                        <li>
+                            <span class="bar-graph">
+                                <i class="fa-solid fa-chart-simple"></i></span>
+                            <img src="Assets/second-album-cover.jpeg" alt="first_cover_img">
+                            <h3>Shivers</h3>
+                            <h4>Ed Sheeran</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                        </li>
+                    </div>
+                    <div class="list-container">
+                        <li>
+                            <span class="bar-graph">
+                                <i class="fa-solid fa-chart-simple"></i></span>
+                            <img src="Assets/third-album-cover.jpg" alt="first_cover_img">
+                            <h3>Cheer Up</h3>
+                            <h4>Twice</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                        </li>
+                    </div>
+                    <div class="list-container">
+                        <li>
+                            <span class="bar-graph">
+                                <i class="fa-solid fa-chart-simple"></i></span>
+                            <img src="Assets/fourth-album-cover.jpg" alt="first_cover_img">
+                            <h3>Nunu Nana</h3>
+                            <h4>Jessi</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                        </li>
+                    </div>
+                    <div class="list-container">
+                        <li>
+                            <span class="bar-graph">
+                                <i class="fa-solid fa-chart-simple"></i></span>
+                            <img src="Assets/jeff.jpg" alt="first_cover_img">
+                            <h3>Stay</h3>
+                            <h4>Jeff Satur</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                        </li>
+                    </div>
+                    <div class="list-container">
+                        <li>
+                            <span class="bar-graph">
+                                <i class="fa-solid        fa-chart-simple"></i></span>
+                            <img src="Assets/fifth-album-cover.jpg" alt="first_cover_img">
+                            <h3>Raindrop</h3>
+                            <h4>Arctic Monkeys</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                        </li>
+                    </div>
+                    <div class="list-container">
+                        <li>
+                            <span class="bar-graph">
+                                <i class="fa-solid fa-chart-simple"></i></span>
+                            <img src="Assets/sixth-album-cover.jpeg" alt="first_cover_img">
+                            <h3>Free Fall</h3>
+                            <h4>Slot Machine</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                        </li>
+                    </div>
+                    <div class="list-container">
+                        <li>
+                            <span class="bar-graph">
+                                <i class="fa-solid fa-chart-simple"></i></span>
+                            <img src="Assets/first-cover-image.jpeg" alt="first_cover_img">
+                            <h3>Stay with me</h3>
+                            <h4>Jeff Satur</h4><span class="heart"><i class="fa-regular fa-heart"></i></span>
+                        </li>
+                    </div>
+                </ol>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
